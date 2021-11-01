@@ -1,0 +1,87 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Google-Maps-iOS-Utils (4.0.0):
+    - Google-Maps-iOS-Utils/Clustering (= 4.0.0)
+    - Google-Maps-iOS-Utils/Geometry (= 4.0.0)
+    - Google-Maps-iOS-Utils/GeometryUtils (= 4.0.0)
+    - Google-Maps-iOS-Utils/Heatmap (= 4.0.0)
+    - Google-Maps-iOS-Utils/QuadTree (= 4.0.0)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (4.0.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (4.0.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/GeometryUtils (4.0.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (4.0.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (4.0.0):
+    - GoogleMaps
+  - GoogleMaps (5.2.0):
+    - GoogleMaps/Maps (= 5.2.0)
+  - GoogleMaps/Base (5.2.0)
+  - GoogleMaps/Maps (5.2.0):
+    - GoogleMaps/Base
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CoreLocation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Realm (10.18.0):
+    - Realm/Headers (= 10.18.0)
+  - Realm/Headers (10.18.0)
+  - RealmSwift (10.18.0):
+    - Realm (= 10.18.0)
+  - SwiftDate (6.3.1)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Google-Maps-iOS-Utils
+  - GoogleMaps
+  - PromiseKit
+  - PromiseKit/CoreLocation
+  - R.swift
+  - RealmSwift
+  - SwiftDate
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
+    - PromiseKit
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - SwiftDate
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Google-Maps-iOS-Utils: a06cb5c3a0e5b2a505fed82d936ba1b935f8971f
+  GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Realm: b8b0a36bf48c39c50fd8cee7ac34005e6d887ddd
+  RealmSwift: fe2f33d731f47aaf4c3618930f9f7cf7b935c33f
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: 7e1c77671cc16eeec6d6faf7a6ae690a17a33780
+
+COCOAPODS: 1.10.1
