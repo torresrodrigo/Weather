@@ -14,37 +14,13 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOd-ct-Rml">
-                                <rect key="frame" x="117.5" y="274" width="179" height="32"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="27"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-jZ-Qn6">
-                                <rect key="frame" x="87" y="354" width="240" height="188"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="4Yy-gk-jxw"/>
-                                    <constraint firstAttribute="width" constant="240" id="Om5-Lt-dHo"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qOd-ct-Rml" firstAttribute="centerX" secondItem="P4T-jZ-Qn6" secondAttribute="centerX" id="UZI-uO-5EB"/>
-                            <constraint firstItem="P4T-jZ-Qn6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xex-el-652"/>
-                            <constraint firstItem="P4T-jZ-Qn6" firstAttribute="top" secondItem="qOd-ct-Rml" secondAttribute="bottom" constant="48" id="kBx-1M-CeQ"/>
-                            <constraint firstItem="P4T-jZ-Qn6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xXR-6z-DL3"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo" width="72.5" height="101.5"/>
-    </resources>
 </document>
