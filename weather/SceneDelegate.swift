@@ -7,11 +7,11 @@
 
 import UIKit
 import SwiftyUserDefaults
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,23 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        //window.rootViewController = OnboardingVC()
-        //window.makeKeyAndVisible()
-        //self.window = window
-        setupInitialView(window: window)
-    }
-    
-    
-    func setupInitialView(window: UIWindow) {
-        let onboardingStatus = UserDefaultsManager.shared.getOnboardingKey()
-        if onboardingStatus {
-            window.rootViewController = LoginVC()
-        }
-        else {
-            window.rootViewController = OnboardingVC()
-        }
-        window.makeKeyAndVisible()
-        self.window = window
+        let intialView = Switcher.shared.setupInitialView(window: window)
+        self.window = intialView
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
