@@ -3,28 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		27EBB91788185315733104EB /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22ECB6739682005F7273323 /* Pods_weather.framework */; };
+		88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */; };
+		88A0FA3A2730A6CF00FD72B8 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */; };
 		88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B19273023570063CD35 /* AppDelegate.swift */; };
 		88BC2B1C273023570063CD35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B1B273023570063CD35 /* SceneDelegate.swift */; };
-		88BC2B1E273023570063CD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B1D273023570063CD35 /* ViewController.swift */; };
+		88BC2B1E273023570063CD35 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B1D273023570063CD35 /* MainVC.swift */; };
 		88BC2B21273023570063CD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BC2B1F273023570063CD35 /* Main.storyboard */; };
 		88BC2B23273023600063CD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BC2B22273023600063CD35 /* Assets.xcassets */; };
 		88BC2B26273023600063CD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BC2B24273023600063CD35 /* LaunchScreen.storyboard */; };
+		88BC2B3727306E9A0063CD35 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B3527306E9A0063CD35 /* OnboardingVC.swift */; };
+		88BC2B3827306E9A0063CD35 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BC2B3627306E9A0063CD35 /* OnboardingVC.xib */; };
+		88D43092273154B100E7AAAB /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43091273154B100E7AAAB /* Struct.swift */; };
+		88D430942731583700E7AAAB /* GetSlices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D430932731583700E7AAAB /* GetSlices.swift */; };
+		88D4309627316AFC00E7AAAB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4309527316AFC00E7AAAB /* UIViewController+Extensions.swift */; };
+		88D4309827316DD700E7AAAB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4309727316DD700E7AAAB /* R.generated.swift */; };
+		88D4309B2731719300E7AAAB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D430992731719300E7AAAB /* LoginVC.swift */; };
+		88D4309C2731719300E7AAAB /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D4309A2731719300E7AAAB /* LoginVC.xib */; };
+		88D4309E273174BB00E7AAAB /* OnboardingUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4309D273174BB00E7AAAB /* OnboardingUseCases.swift */; };
+		88D430A027318AF300E7AAAB /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4309F27318AF300E7AAAB /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		88BC2B16273023570063CD35 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BC2B19273023570063CD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BC2B1B273023570063CD35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88BC2B1D273023570063CD35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88BC2B1D273023570063CD35 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		88BC2B20273023570063CD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88BC2B22273023600063CD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BC2B25273023600063CD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88BC2B27273023600063CD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BC2B3527306E9A0063CD35 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		88BC2B3627306E9A0063CD35 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
+		88D43091273154B100E7AAAB /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		88D430932731583700E7AAAB /* GetSlices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSlices.swift; sourceTree = "<group>"; };
+		88D4309527316AFC00E7AAAB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		88D4309727316DD700E7AAAB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		88D430992731719300E7AAAB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		88D4309A2731719300E7AAAB /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		88D4309D273174BB00E7AAAB /* OnboardingUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUseCases.swift; sourceTree = "<group>"; };
+		88D4309F27318AF300E7AAAB /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		A8A8D59326C78E32259AC82C /* Pods-weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.release.xcconfig"; path = "Target Support Files/Pods-weather/Pods-weather.release.xcconfig"; sourceTree = "<group>"; };
 		F22ECB6739682005F7273323 /* Pods_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD57F40EB23974BDE3F08368 /* Pods-weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.debug.xcconfig"; path = "Target Support Files/Pods-weather/Pods-weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,8 +80,16 @@
 				FD57F40EB23974BDE3F08368 /* Pods-weather.debug.xcconfig */,
 				A8A8D59326C78E32259AC82C /* Pods-weather.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		88A0FA362730A69600FD72B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */,
+				88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		88BC2B0D273023570063CD35 = {
@@ -81,15 +113,82 @@
 		88BC2B18273023570063CD35 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				88BC2B3427306C730063CD35 /* Util */,
+				88BC2B3327306C6B0063CD35 /* Repository */,
+				88BC2B3227306C5D0063CD35 /* Extensions */,
+				88BC2B3127306C2D0063CD35 /* View */,
+				88BC2B3027306C250063CD35 /* Controllers */,
+				88BC2B2F27306BD70063CD35 /* UseCases */,
+				88BC2B2E27306BC40063CD35 /* Model */,
 				88BC2B19273023570063CD35 /* AppDelegate.swift */,
 				88BC2B1B273023570063CD35 /* SceneDelegate.swift */,
-				88BC2B1D273023570063CD35 /* ViewController.swift */,
-				88BC2B1F273023570063CD35 /* Main.storyboard */,
 				88BC2B22273023600063CD35 /* Assets.xcassets */,
 				88BC2B24273023600063CD35 /* LaunchScreen.storyboard */,
 				88BC2B27273023600063CD35 /* Info.plist */,
 			);
 			path = weather;
+			sourceTree = "<group>";
+		};
+		88BC2B2E27306BC40063CD35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D43091273154B100E7AAAB /* Struct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88BC2B2F27306BD70063CD35 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				88D430932731583700E7AAAB /* GetSlices.swift */,
+				88D4309D273174BB00E7AAAB /* OnboardingUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		88BC2B3027306C250063CD35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88A0FA362730A69600FD72B8 /* Cells */,
+				88BC2B1D273023570063CD35 /* MainVC.swift */,
+				88BC2B3527306E9A0063CD35 /* OnboardingVC.swift */,
+				88D430992731719300E7AAAB /* LoginVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		88BC2B3127306C2D0063CD35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88D4309A2731719300E7AAAB /* LoginVC.xib */,
+				88BC2B1F273023570063CD35 /* Main.storyboard */,
+				88BC2B3627306E9A0063CD35 /* OnboardingVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88BC2B3227306C5D0063CD35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88D4309527316AFC00E7AAAB /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88BC2B3327306C6B0063CD35 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		88BC2B3427306C730063CD35 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88D4309727316DD700E7AAAB /* R.generated.swift */,
+				88D4309F27318AF300E7AAAB /* UserDefaultsManager.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +199,7 @@
 			buildConfigurationList = 88BC2B2A273023610063CD35 /* Build configuration list for PBXNativeTarget "weather" */;
 			buildPhases = (
 				1E8AD1F5F23BA68EC6F3C205 /* [CP] Check Pods Manifest.lock */,
+				88BC2B2D27304C910063CD35 /* ShellScript */,
 				88BC2B12273023570063CD35 /* Sources */,
 				88BC2B13273023570063CD35 /* Frameworks */,
 				88BC2B14273023570063CD35 /* Resources */,
@@ -152,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D4309C2731719300E7AAAB /* LoginVC.xib in Resources */,
 				88BC2B26273023600063CD35 /* LaunchScreen.storyboard in Resources */,
+				88BC2B3827306E9A0063CD35 /* OnboardingVC.xib in Resources */,
 				88BC2B23273023600063CD35 /* Assets.xcassets in Resources */,
+				88A0FA3A2730A6CF00FD72B8 /* OnboardingCell.xib in Resources */,
 				88BC2B21273023570063CD35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +303,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		88BC2B2D27304C910063CD35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n\n";
+		};
 		B39C268126865B3F00B55AC2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,9 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BC2B1E273023570063CD35 /* ViewController.swift in Sources */,
+				88BC2B1E273023570063CD35 /* MainVC.swift in Sources */,
+				88D43092273154B100E7AAAB /* Struct.swift in Sources */,
+				88D430A027318AF300E7AAAB /* UserDefaultsManager.swift in Sources */,
+				88D4309827316DD700E7AAAB /* R.generated.swift in Sources */,
+				88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */,
+				88D4309B2731719300E7AAAB /* LoginVC.swift in Sources */,
+				88BC2B3727306E9A0063CD35 /* OnboardingVC.swift in Sources */,
+				88D4309627316AFC00E7AAAB /* UIViewController+Extensions.swift in Sources */,
+				88D4309E273174BB00E7AAAB /* OnboardingUseCases.swift in Sources */,
 				88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */,
 				88BC2B1C273023570063CD35 /* SceneDelegate.swift in Sources */,
+				88D430942731583700E7AAAB /* GetSlices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
