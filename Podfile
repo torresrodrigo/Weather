@@ -14,5 +14,6 @@ target 'weather' do
 	pod 'GoogleMaps'
 	pod 'Google-Maps-iOS-Utils'
 	pod 'SwiftDate'
+	pod 'MaterialComponents'
 
 end
