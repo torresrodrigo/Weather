@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		27EBB91788185315733104EB /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22ECB6739682005F7273323 /* Pods_weather.framework */; };
+		880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E42732C9F1003EBF51 /* NewLocationVC.swift */; };
+		880208E72732D33A003EBF51 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E62732D33A003EBF51 /* MainTab.swift */; };
+		886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */; };
+		886DC7512732DE3700D4DADD /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7502732DE3700D4DADD /* Alerts.swift */; };
+		886DC7542732DF2900D4DADD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7532732DF2900D4DADD /* LoginService.swift */; };
+		886DC7562732DFF300D4DADD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 886DC7552732DFF300D4DADD /* GoogleService-Info.plist */; };
 		88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */; };
 		88A0FA3A2730A6CF00FD72B8 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */; };
 		88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B19273023570063CD35 /* AppDelegate.swift */; };
@@ -30,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		880208E42732C9F1003EBF51 /* NewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationVC.swift; sourceTree = "<group>"; };
+		880208E62732D33A003EBF51 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		886DC7502732DE3700D4DADD /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		886DC7532732DF2900D4DADD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		886DC7552732DFF300D4DADD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		88BC2B16273023570063CD35 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +97,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		880208E32732C9AC003EBF51 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				88BC2B1D273023570063CD35 /* MainVC.swift */,
+				880208E42732C9F1003EBF51 /* NewLocationVC.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		886DC7522732DF0F00D4DADD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				886DC7532732DF2900D4DADD /* LoginService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		88A0FA362730A69600FD72B8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +144,7 @@
 		88BC2B18273023570063CD35 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				886DC7522732DF0F00D4DADD /* Services */,
 				88BC2B3427306C730063CD35 /* Util */,
 				88BC2B3327306C6B0063CD35 /* Repository */,
 				88BC2B3227306C5D0063CD35 /* Extensions */,
@@ -127,6 +157,7 @@
 				88BC2B22273023600063CD35 /* Assets.xcassets */,
 				88BC2B24273023600063CD35 /* LaunchScreen.storyboard */,
 				88BC2B27273023600063CD35 /* Info.plist */,
+				886DC7552732DFF300D4DADD /* GoogleService-Info.plist */,
 			);
 			path = weather;
 			sourceTree = "<group>";
@@ -151,10 +182,11 @@
 		88BC2B3027306C250063CD35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				880208E32732C9AC003EBF51 /* Tabs */,
 				88A0FA362730A69600FD72B8 /* Cells */,
-				88BC2B1D273023570063CD35 /* MainVC.swift */,
 				88BC2B3527306E9A0063CD35 /* OnboardingVC.swift */,
 				88D430992731719300E7AAAB /* LoginVC.swift */,
+				880208E62732D33A003EBF51 /* MainTab.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				88D4309527316AFC00E7AAAB /* UIViewController+Extensions.swift */,
+				886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +223,7 @@
 				88D4309727316DD700E7AAAB /* R.generated.swift */,
 				88D4309F27318AF300E7AAAB /* UserDefaultsManager.swift */,
 				88F052162732211D0016D4D1 /* Switcher.swift */,
+				886DC7502732DE3700D4DADD /* Alerts.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -261,6 +295,7 @@
 				88BC2B23273023600063CD35 /* Assets.xcassets in Resources */,
 				88A0FA3A2730A6CF00FD72B8 /* OnboardingCell.xib in Resources */,
 				88BC2B21273023570063CD35 /* Main.storyboard in Resources */,
+				886DC7562732DFF300D4DADD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +388,16 @@
 				88D43092273154B100E7AAAB /* Struct.swift in Sources */,
 				88D430A027318AF300E7AAAB /* UserDefaultsManager.swift in Sources */,
 				88D4309827316DD700E7AAAB /* R.generated.swift in Sources */,
+				880208E72732D33A003EBF51 /* MainTab.swift in Sources */,
 				88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */,
 				88D4309B2731719300E7AAAB /* LoginVC.swift in Sources */,
 				88BC2B3727306E9A0063CD35 /* OnboardingVC.swift in Sources */,
 				88D4309627316AFC00E7AAAB /* UIViewController+Extensions.swift in Sources */,
 				88D4309E273174BB00E7AAAB /* OnboardingUseCases.swift in Sources */,
+				886DC7512732DE3700D4DADD /* Alerts.swift in Sources */,
+				886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */,
+				880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */,
+				886DC7542732DF2900D4DADD /* LoginService.swift in Sources */,
 				88F052172732211D0016D4D1 /* Switcher.swift in Sources */,
 				88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */,
 				88BC2B1C273023570063CD35 /* SceneDelegate.swift in Sources */,
