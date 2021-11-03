@@ -9,10 +9,11 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var labelTest: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 
 }
 

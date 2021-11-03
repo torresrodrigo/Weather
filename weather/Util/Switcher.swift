@@ -17,13 +17,11 @@ class Switcher {
         print(onboardingStatus)
         if onboardingStatus {
             window.rootViewController = LoginVC()
-            window.makeKeyAndVisible()
         }
         else {
             window.rootViewController = OnboardingVC()
-            window.makeKeyAndVisible()
         }
-        //window.makeKeyAndVisible()
+        window.makeKeyAndVisible()
         return window
     }
     

@@ -15,5 +15,7 @@ target 'weather' do
 	pod 'Google-Maps-iOS-Utils'
 	pod 'SwiftDate'
 	pod 'MaterialComponents'
-
+	pod 'Firebase'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'
 end
