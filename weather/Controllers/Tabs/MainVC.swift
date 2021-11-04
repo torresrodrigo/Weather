@@ -13,7 +13,19 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        invoke()
     }
 
+}
+
+
+//MARK: - API CALL
+extension MainVC: GetWeatherUseCase {
+    
+    func invoke() {
+        GetWeatherUseCaseImp.shared.invoke(lat: "-29,41105", lon: "-66.85067")
+    }
+    
+    
 }
 
