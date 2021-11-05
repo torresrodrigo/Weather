@@ -18,10 +18,8 @@ class LoginService {
     func loginUser(email: String, password: String, controller: UIViewController) {
         firebaseAuth.signIn(withEmail: email, password: password) { result, error in
             if error == nil {
-                let mainTab = UIStoryboard.main.instantiate() as MainTab
-                mainTab.modalPresentationStyle = .fullScreen
-                mainTab.modalTransitionStyle = .crossDissolve
-                controller.present(mainTab, animated: true)
+                UserDefaultsManager.shared.setLoggedKey()
+                controller.present(Switcher.shared.goToMainVC(), animated: true, completion: nil)
             } else {
                 self.firebaseAuth.createUser(withEmail: email, password: password) { result, error in
                     if error == nil {
@@ -33,6 +31,7 @@ class LoginService {
             }
         }
     }
+    
     
     
 }

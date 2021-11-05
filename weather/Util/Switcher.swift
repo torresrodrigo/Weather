@@ -14,15 +14,24 @@ class Switcher {
     
     func setupInitialView(window: UIWindow) -> UIWindow {
         let onboardingStatus = UserDefaultsManager.shared.getOnboardingKey()
-        print(onboardingStatus)
-        if onboardingStatus {
-            window.rootViewController = LoginVC()
-        }
-        else {
+        let loggedStatus = UserDefaultsManager.shared.getLoggedKey()
+        
+        if onboardingStatus == false && loggedStatus == false {
             window.rootViewController = OnboardingVC()
+        } else if onboardingStatus == true && loggedStatus == false  {
+            window.rootViewController = LoginVC()
+        } else {
+            window.rootViewController = goToMainVC()
         }
+        
         window.makeKeyAndVisible()
         return window
+    }
+    
+    func goToMainVC() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTab") as! MainTab
+        return tabBarController
     }
     
 }

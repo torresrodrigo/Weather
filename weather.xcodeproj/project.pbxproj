@@ -10,10 +10,17 @@
 		27EBB91788185315733104EB /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22ECB6739682005F7273323 /* Pods_weather.framework */; };
 		880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E42732C9F1003EBF51 /* NewLocationVC.swift */; };
 		880208E72732D33A003EBF51 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E62732D33A003EBF51 /* MainTab.swift */; };
+		880C63A1273552F00017FB26 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C63A0273552F00017FB26 /* LocationService.swift */; };
 		886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */; };
 		886DC7512732DE3700D4DADD /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7502732DE3700D4DADD /* Alerts.swift */; };
 		886DC7542732DF2900D4DADD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7532732DF2900D4DADD /* LoginService.swift */; };
 		886DC7562732DFF300D4DADD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 886DC7552732DFF300D4DADD /* GoogleService-Info.plist */; };
+		886DC7582733155D00D4DADD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7572733155D00D4DADD /* APIManager.swift */; };
+		886DC75A2733169500D4DADD /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7592733169500D4DADD /* Alamofire+Extensions.swift */; };
+		886DC75C2733194900D4DADD /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC75B2733194900D4DADD /* WeatherDTO.swift */; };
+		886DC75E27331B5C00D4DADD /* GetWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC75D27331B5C00D4DADD /* GetWeatherUseCase.swift */; };
+		8888907827342B5400C1A863 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888907727342B5400C1A863 /* String+Extensions.swift */; };
+		8888907A27343AA200C1A863 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888907927343AA200C1A863 /* Double+Extensions.swift */; };
 		88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */; };
 		88A0FA3A2730A6CF00FD72B8 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */; };
 		88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BC2B19273023570063CD35 /* AppDelegate.swift */; };
@@ -38,10 +45,17 @@
 /* Begin PBXFileReference section */
 		880208E42732C9F1003EBF51 /* NewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationVC.swift; sourceTree = "<group>"; };
 		880208E62732D33A003EBF51 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		880C63A0273552F00017FB26 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		886DC7502732DE3700D4DADD /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		886DC7532732DF2900D4DADD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		886DC7552732DFF300D4DADD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		886DC7572733155D00D4DADD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		886DC7592733169500D4DADD /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
+		886DC75B2733194900D4DADD /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
+		886DC75D27331B5C00D4DADD /* GetWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherUseCase.swift; sourceTree = "<group>"; };
+		8888907727342B5400C1A863 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8888907927343AA200C1A863 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		88A0FA372730A6CE00FD72B8 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		88A0FA382730A6CE00FD72B8 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		88BC2B16273023570063CD35 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				886DC7532732DF2900D4DADD /* LoginService.swift */,
+				886DC7572733155D00D4DADD /* APIManager.swift */,
+				880C63A0273552F00017FB26 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -166,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				88D43091273154B100E7AAAB /* Struct.swift */,
+				886DC75B2733194900D4DADD /* WeatherDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +192,7 @@
 			children = (
 				88D430932731583700E7AAAB /* GetSlices.swift */,
 				88D4309D273174BB00E7AAAB /* OnboardingUseCases.swift */,
+				886DC75D27331B5C00D4DADD /* GetWeatherUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -206,6 +224,9 @@
 			children = (
 				88D4309527316AFC00E7AAAB /* UIViewController+Extensions.swift */,
 				886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */,
+				886DC7592733169500D4DADD /* Alamofire+Extensions.swift */,
+				8888907727342B5400C1A863 /* String+Extensions.swift */,
+				8888907927343AA200C1A863 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,9 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8888907A27343AA200C1A863 /* Double+Extensions.swift in Sources */,
 				88BC2B1E273023570063CD35 /* MainVC.swift in Sources */,
+				886DC7582733155D00D4DADD /* APIManager.swift in Sources */,
 				88D43092273154B100E7AAAB /* Struct.swift in Sources */,
 				88D430A027318AF300E7AAAB /* UserDefaultsManager.swift in Sources */,
+				886DC75C2733194900D4DADD /* WeatherDTO.swift in Sources */,
 				88D4309827316DD700E7AAAB /* R.generated.swift in Sources */,
 				880208E72732D33A003EBF51 /* MainTab.swift in Sources */,
 				88A0FA392730A6CF00FD72B8 /* OnboardingCell.swift in Sources */,
@@ -395,10 +419,14 @@
 				88D4309627316AFC00E7AAAB /* UIViewController+Extensions.swift in Sources */,
 				88D4309E273174BB00E7AAAB /* OnboardingUseCases.swift in Sources */,
 				886DC7512732DE3700D4DADD /* Alerts.swift in Sources */,
+				886DC75A2733169500D4DADD /* Alamofire+Extensions.swift in Sources */,
 				886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */,
+				886DC75E27331B5C00D4DADD /* GetWeatherUseCase.swift in Sources */,
+				880C63A1273552F00017FB26 /* LocationService.swift in Sources */,
 				880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */,
 				886DC7542732DF2900D4DADD /* LoginService.swift in Sources */,
 				88F052172732211D0016D4D1 /* Switcher.swift in Sources */,
+				8888907827342B5400C1A863 /* String+Extensions.swift in Sources */,
 				88BC2B1A273023570063CD35 /* AppDelegate.swift in Sources */,
 				88BC2B1C273023570063CD35 /* SceneDelegate.swift in Sources */,
 				88D430942731583700E7AAAB /* GetSlices.swift in Sources */,

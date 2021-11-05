@@ -17,6 +17,8 @@ class Alert {
             alert.dismiss(animated: true, completion: nil)
         }
         let registerAction = UIAlertAction(title: "Registrar", style: .default) { action in
+            UserDefaultsManager.shared.setLoggedKey()
+            print(UserDefaultsManager.shared.getLoggedKey())
             let mainTab = UIStoryboard.main.instantiate() as MainTab
             mainTab.modalPresentationStyle = .fullScreen
             mainTab.modalTransitionStyle = .crossDissolve
