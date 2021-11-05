@@ -17,16 +17,19 @@ struct Current: Codable {
     let feels_like: Double
     //let humidity: Int
     let wind_speed: Double
-    
+    let weather: [Weather]
+    /*
     enum CodingsKeys: String, CodingKey {
         case temp
         case feels_like = "feels_like"
         case humidity
         case wind_speed = "wind_speed"
     }
-    /*
-    init (decoder: Decoder) throws {oLo
-        
-    }
-    */
+     */
+    
+}
+
+struct Weather: Codable {
+    let main: String
+    let description: String
 }

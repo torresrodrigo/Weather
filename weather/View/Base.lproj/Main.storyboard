@@ -42,7 +42,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oW-lS-lE2">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oW-lS-lE2">
                                 <rect key="frame" x="51" y="200" width="313" height="35"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="height" constant="188" id="mgx-Y5-pe8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZG-ne-eLm">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZG-ne-eLm">
                                 <rect key="frame" x="51" y="491" width="313" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -63,7 +63,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ryw-x7-Aet"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="V1B-gH-lqz" firstAttribute="leading" secondItem="ryw-x7-Aet" secondAttribute="leading" constant="87" id="1xD-Ha-2ys"/>
                             <constraint firstItem="SZG-ne-eLm" firstAttribute="top" secondItem="V1B-gH-lqz" secondAttribute="bottom" constant="46" id="6KT-c0-Jjf"/>
@@ -81,7 +81,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="cNI-ki-nhN"/>
                     <connections>
+                        <outlet property="imageWeather" destination="V1B-gH-lqz" id="CQp-Dc-5R9"/>
                         <outlet property="labelTest" destination="0fr-ds-8Fd" id="592-WR-9tr"/>
+                        <outlet property="locationLabel" destination="8oW-lS-lE2" id="I3G-eH-EY1"/>
+                        <outlet property="tempLabel" destination="SZG-ne-eLm" id="1WB-vU-3qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCE-ob-MJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -110,6 +113,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

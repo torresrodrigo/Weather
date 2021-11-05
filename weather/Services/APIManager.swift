@@ -17,7 +17,7 @@ class APIManager {
     
     let appID = "1883a314d8d01d1a39e59853e0b21453"
     var base_url: String {
-        return "https://api.openweathermap.org/data/2.5/onecall?&appid=\(appID)"
+        return "https://api.openweathermap.org/data/2.5/onecall?&appid=\(appID)&units=metric"
     }
     
     func fetchDataWeather(params: [String : String]) -> Promise<WeatherDTO>{
