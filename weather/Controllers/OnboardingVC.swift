@@ -97,5 +97,4 @@ extension OnboardingVC: GetSlicesUseCase {
         return GetSlicesUseCaseImp.invoke()
     }
     
-    
 }

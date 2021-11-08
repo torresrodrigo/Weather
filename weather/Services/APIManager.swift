@@ -20,13 +20,12 @@ class APIManager {
         return "https://api.openweathermap.org/data/2.5/onecall?&appid=\(appID)&units=metric"
     }
     
-    func fetchDataWeather(params: [String : String]) -> Promise<WeatherDTO>{
+    func fetchDataWeather(params: [String : String]) -> Promise<WeatherDTO> {
         AF.request(base_url,
                    method: .get,
                    parameters: params)
             .validate()
             .responseDecodable(WeatherDTO.self)
     }
-    
 
 }

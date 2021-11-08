@@ -18,7 +18,6 @@ class MainTab: UITabBarController {
         tabBar.barStyle = .black
         tabBar.isTranslucent = false
         tabBar.barTintColor = UIColor(cgColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        //tabBar.tintColor = Colors.BarTint
     }
 
 }
