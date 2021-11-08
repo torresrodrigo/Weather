@@ -6,10 +6,10 @@ target 'weather' do
   use_frameworks!
 	pod 'R.swift'
 	pod 'Alamofire'
+	pod "PromiseKit/CorePromise", "~> 6.8"
 	pod 'PromiseKit'
-	pod 'PromiseKit/CoreLocation'
+	pod "PromiseKit/CoreLocation", "~> 6.0"
 	pod 'SwiftyUserDefaults'
-	pod 'PromiseKit/CoreLocation'
 	pod 'RealmSwift'
 	pod 'GoogleMaps'
 	pod 'Google-Maps-iOS-Utils'

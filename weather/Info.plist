@@ -62,5 +62,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Weather App necesita obtener tu ubicacion actual mediante el GPS</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Weather App necesita obtener tu ubicacion actual mediante el GPS</string>
 </dict>
 </plist>

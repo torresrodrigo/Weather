@@ -8,6 +8,7 @@
 import UIKit
 import PromiseKit
 
+
 class MainVC: UIViewController {
 
     @IBOutlet weak var labelTest: UILabel!
@@ -15,13 +16,10 @@ class MainVC: UIViewController {
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var imageWeather: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         invoke()
     }
-    
-    //
     
     func setupUI(data: WeatherDTO) {
         locationLabel.isHidden = false
@@ -37,17 +35,11 @@ class MainVC: UIViewController {
 extension MainVC: GetWeatherUseCase {
     
     func invoke() {
-        fetchData(lat: "-29,41105", lon: "-66.85067")
-    }
-    
-    func fetchData(lat: String, lon: String)  {
-        let paramsLocation = ["lat" : lat, "lon": lon]
-        firstly {
-            APIManager.shared.fetchDataWeather(params: paramsLocation)
-        } .done { data in
+        GetWeatherUseCaseImp.shared.fetchData()
+        .done { data in
             self.setupUI(data: data)
         }.catch { error in
-            print("Error: \(error.localizedDescription)")
+            print(error.localizedDescription)
         }
     }
 

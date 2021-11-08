@@ -8,6 +8,7 @@
 import Foundation
 import PromiseKit
 import UIKit
+import CoreLocation
 
 protocol GetWeatherUseCase {
     func invoke()
@@ -17,19 +18,16 @@ class GetWeatherUseCaseImp {
     
     static let shared = GetWeatherUseCaseImp()
     
-    func fetchData(lat: String, lon: String) -> WeatherDTO? {
-        let paramsLocation = ["lat" : lat, "lon": lon]
-        var dataWeather: WeatherDTO?
+    func fetchData() -> Promise<WeatherDTO> {
+        
         firstly {
-            APIManager.shared.fetchDataWeather(params: paramsLocation)
-        } .done { data in
-            dataWeather = data
-            print(data)
-        }.catch { error in
-            print("Error: \(error.localizedDescription)")
-        }
-        return dataWeather
+            CLLocationManager.requestLocation()
+                .lastValue
+                .map{$0.coordinate}
+        }.then { return APIManager.shared.fetchDataWeather(params: ["lat": String(describing: $0.latitude), "lon": String(describing: $0.longitude) ])}
+        
     }
+    
     
     func getImage(dataImg: String?, dataDescription: String?) -> UIImage? {
         switch dataImg {
@@ -54,17 +52,3 @@ class GetWeatherUseCaseImp {
     }
     
 }
-/*
-extension GetWeatherUseCaseImp: LocationServiceDelegate {
-    
-    func promptAuthorizationAction() {
-        <#code#>
-    }
-    
-    func didAuthorize() {
-        <#code#>
-    }
-    
-    
-}
-*/

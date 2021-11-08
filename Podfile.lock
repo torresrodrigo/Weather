@@ -792,7 +792,8 @@ DEPENDENCIES:
   - GoogleMaps
   - MaterialComponents
   - PromiseKit
-  - PromiseKit/CoreLocation
+  - PromiseKit/CoreLocation (~> 6.0)
+  - PromiseKit/CorePromise (~> 6.8)
   - R.swift
   - RealmSwift
   - SwiftDate
@@ -857,6 +858,6 @@ SPEC CHECKSUMS:
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: 3e809a401a3267e35da9767d58ce9edfd60a2cbe
+PODFILE CHECKSUM: e8a579a4ad3230c4b567eee953b60b29508aa01d
 
 COCOAPODS: 1.10.1

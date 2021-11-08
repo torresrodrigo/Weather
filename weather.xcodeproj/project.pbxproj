@@ -10,7 +10,6 @@
 		27EBB91788185315733104EB /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22ECB6739682005F7273323 /* Pods_weather.framework */; };
 		880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E42732C9F1003EBF51 /* NewLocationVC.swift */; };
 		880208E72732D33A003EBF51 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880208E62732D33A003EBF51 /* MainTab.swift */; };
-		880C63A1273552F00017FB26 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C63A0273552F00017FB26 /* LocationService.swift */; };
 		886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */; };
 		886DC7512732DE3700D4DADD /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7502732DE3700D4DADD /* Alerts.swift */; };
 		886DC7542732DF2900D4DADD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886DC7532732DF2900D4DADD /* LoginService.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		880208E42732C9F1003EBF51 /* NewLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationVC.swift; sourceTree = "<group>"; };
 		880208E62732D33A003EBF51 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
-		880C63A0273552F00017FB26 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		886DC74E2732D6E800D4DADD /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		886DC7502732DE3700D4DADD /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		886DC7532732DF2900D4DADD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			children = (
 				886DC7532732DF2900D4DADD /* LoginService.swift */,
 				886DC7572733155D00D4DADD /* APIManager.swift */,
-				880C63A0273552F00017FB26 /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 				886DC75A2733169500D4DADD /* Alamofire+Extensions.swift in Sources */,
 				886DC74F2732D6E800D4DADD /* UIStoryboard+Extensions.swift in Sources */,
 				886DC75E27331B5C00D4DADD /* GetWeatherUseCase.swift in Sources */,
-				880C63A1273552F00017FB26 /* LocationService.swift in Sources */,
 				880208E52732C9F1003EBF51 /* NewLocationVC.swift in Sources */,
 				886DC7542732DF2900D4DADD /* LoginService.swift in Sources */,
 				88F052172732211D0016D4D1 /* Switcher.swift in Sources */,
