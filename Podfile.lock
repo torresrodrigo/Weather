@@ -90,6 +90,7 @@ PODS:
   - GoogleMaps/Base (5.2.0)
   - GoogleMaps/Maps (5.2.0):
     - GoogleMaps/Base
+  - GooglePlaces (5.1.0)
   - GoogleUtilities/AppDelegateSwizzler (7.5.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -790,6 +791,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Google-Maps-iOS-Utils
   - GoogleMaps
+  - GooglePlaces
   - MaterialComponents
   - PromiseKit
   - PromiseKit/CoreLocation (~> 6.0)
@@ -812,6 +814,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleMaps
+    - GooglePlaces
     - GoogleUtilities
     - GTMSessionFetcher
     - MaterialComponents
@@ -841,6 +844,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 8d10c1c470fcb0e5143ed74fddd164f0a0384800
   GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
   GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+  GooglePlaces: c57cd5aa7e91d10fa5106c792de74f3bd6436260
   GoogleUtilities: eea970f4a389963963bffe8d8fabe43540678b9c
   GTMSessionFetcher: 36689134877faeb055b27dfa4ccc9ceaa42e029e
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
@@ -858,6 +862,6 @@ SPEC CHECKSUMS:
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: e8a579a4ad3230c4b567eee953b60b29508aa01d
+PODFILE CHECKSUM: eec06bbfde634291fbbfb4029d92a0879226a709
 
 COCOAPODS: 1.10.1

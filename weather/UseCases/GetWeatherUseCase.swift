@@ -28,6 +28,19 @@ class GetWeatherUseCaseImp {
         
     }
     
+    func fetchDataWithCoordinates(lat: String, lon: String) -> Promise<WeatherDTO> {
+        return Promise { seal in
+            firstly {
+                APIManager.shared.fetchDataWeather(params: ["lat": String(describing: lat), "lon": String(describing: lon)])
+            }.done { data in
+                seal.fulfill(data)
+            }.catch { error in
+                seal.reject(error)
+            }
+            
+        }
+    }
+    
     
     func getImage(dataImg: String?, dataDescription: String?) -> UIImage? {
         switch dataImg {
