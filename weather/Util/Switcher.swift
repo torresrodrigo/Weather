@@ -33,5 +33,12 @@ class Switcher {
         let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTab") as! MainTab
         return tabBarController
     }
+
+    
+    func goToLocation() -> NewLocationVC {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newLocationVC = storyboard.instantiateViewController(withIdentifier: "NewLocationVC") as! NewLocationVC
+        return newLocationVC
+    }
     
 }

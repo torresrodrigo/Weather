@@ -18,4 +18,5 @@ target 'weather' do
 	pod 'Firebase'
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
+	pod 'GooglePlaces'
 end
