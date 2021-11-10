@@ -17,7 +17,7 @@ struct Current: Codable {
     let feels_like: Double
     //let humidity: Int
     let wind_speed: Double
-    let weather: [Weather]
+    let weather: [WeatherMain]
     /*
     enum CodingsKeys: String, CodingKey {
         case temp
@@ -29,7 +29,7 @@ struct Current: Codable {
     
 }
 
-struct Weather: Codable {
+struct WeatherMain: Codable {
     let main: String
     let description: String
 }

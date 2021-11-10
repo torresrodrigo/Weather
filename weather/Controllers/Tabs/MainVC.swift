@@ -23,6 +23,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         invoke()
         setupButton()
+        setupDelegate()
     }
     
     func setupUI(data: WeatherDTO) {
@@ -45,10 +46,6 @@ class MainVC: UIViewController {
     private func setupButton() {
         let button = Buttons.shared.createFloatingButton(controller: self)
         button.addTarget(self, action: #selector(goToLocation), for: .touchUpInside)
-        //let placeController = GMSAutocompleteViewController()
-        //placeController.delegate = self
-        //present(placeController, animated: true, completion: nil)
-        
     }
     
     @objc func goToLocation() {
@@ -86,6 +83,25 @@ extension MainVC: NewLocationDelegate {
             print("\(error.localizedDescription)")
         }
     }
+}
+
+extension MainVC: LocationDelegate {
+    
+    func setupDelegate() {
+        let locationVC = self.tabBarController!.viewControllers![1] as! LocationsVC
+        locationVC.delegate = self
+    }
+    
+    func didTapCell(latitude: String, longitude: String) {
+        firstly {
+            GetWeatherUseCaseImp.shared.fetchDataWithCoordinates(lat: latitude, lon: longitude)
+        }.done { data in
+            self.setupUI(data: data)
+        }.catch { error in
+            print(error.localizedDescription)
+        }
+    }
+    
     
 }
 

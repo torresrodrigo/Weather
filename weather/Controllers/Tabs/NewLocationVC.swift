@@ -112,7 +112,13 @@ extension NewLocationVC: UITableViewDelegate, UITableViewDataSource {
             
             guard let name = response?.mapItems[0].name else {
                 return
-            }            
+            }
+            
+            let newLocation = Locations()
+            newLocation.name = name
+            newLocation.latitude = String(describing: coordinate.latitude)
+            newLocation.longitude = String(describing: coordinate.longitude)
+            try! LocationsRepository.shared.save(location: newLocation)
             delegate?.didTapPlace(coordinate: coordinate, nameCity: name)
             self.navigationController?.popToRootViewController(animated: true)
         }
